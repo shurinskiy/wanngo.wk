@@ -1,0 +1,26 @@
+.breadcrumbs {
+	$self: &;
+	display: flex;
+	font-size: 17px;
+	margin-bottom: 18px !important;
+	font-family: "RL", sans-serif;
+	
+	a {
+		text-decoration: none;
+		color: #9B9B9B;
+		margin-right: 5px;
+		
+		&::after {
+			display: inline-block;
+			content: '';
+			width: 4px;
+			height: 8px;
+			background: url('#{$images-path}icons-sprite.svg#icon-arr_right-view-light') center / auto no-repeat transparent;
+			margin-left: 5px;
+		}
+	}
+	
+	span {
+
+	}
+}

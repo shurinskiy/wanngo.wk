@@ -1,0 +1,120 @@
+@@include("_head.html", {"class":"home"}) 
+@@include("_header.html")
+
+<div class="breadcrumbs container"><a href="./">Главная</a><span>Весь каталог</span></div>
+<main class="main container">
+	<div class="main__side sidebar">
+		<h3 class="sidebar__title">Категории</h3>
+		<div class="sidebar__block s-category">
+			<div class="s-category__items">
+				<a class="s-category__item" href="./">Весь каталог</a>
+				<a class="s-category__item" href="./">Ботинки</a>
+				<a class="s-category__item" href="./">Дутики</a>
+				<a class="s-category__item" href="./">Кеды</a>
+				<a class="s-category__item" href="./">Кроссовки</a>
+				<a class="s-category__item" href="./">Лоферы</a>
+				<a class="s-category__item" href="./">Полуботинки</a>
+				<a class="s-category__item" href="./">Полусапоги</a>
+				<a class="s-category__item" href="./">Сандалии</a>
+				<a class="s-category__item" href="./">Слипоны</a>
+			</div>
+		</div>
+		<h3 class="sidebar__title">Фильтры</h3>
+		<div class="sidebar__block s-filters">
+			<div class="s-filters__block">
+				<h4 class="s-filters__title">Категория</h4>
+				<div class="s-filters__items">
+					<label class="s-filters__item"><input type="checkbox"><span>Ботинки</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Ботинки - треккинг</span></label>
+				</div>
+			</div>
+			<div class="s-filters__block">
+				<h4 class="s-filters__title">Материал подкладки</h4>
+				<div class="s-filters__items">
+					<label class="s-filters__item"><input type="checkbox"><span>Отсутствует</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Текстиль</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Шерстяной мех</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Натуральная кожа</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Тинсулейт 200г, флис</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Тинсулейт 200г, флис</span></label>
+				</div>
+			</div>
+			<div class="s-filters__block">
+				<h4 class="s-filters__title">Материал подошвы</h4>
+				<div class="s-filters__items">
+					<label class="s-filters__item"><input type="checkbox"><span>Полиуретан</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Резина</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Пористая резина</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Вулканизация</span></label>
+				</div>
+			</div>
+			<div class="s-filters__block">
+				<h4 class="s-filters__title">Вид застежки</h4>
+				<div class="s-filters__items">
+					<label class="s-filters__item"><input type="checkbox"><span>Шнурки</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Застежка-Молния</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Липучка</span></label>
+				</div>
+			</div>
+			<div class="s-filters__block">
+				<h4 class="s-filters__title">Крепление подошвы</h4>
+				<div class="s-filters__items">
+					<label class="s-filters__item"><input type="checkbox"><span>Литьевое</span></label>
+					<label class="s-filters__item"><input type="checkbox"><span>Клеевое</span></label>
+				</div>
+			</div>
+			<button class="s-filters__reset">Очистить поиск</button>
+			<button class="s-filters__show">Показать товары</button>
+		</div>
+	</div>
+	<div class="main__body">
+		<div class="main__catalog catalog">
+			<div class="catalog__top">
+				<div class="catalog__top-side">
+					<h2 class="catalog__title">Ботинки оптом</h2>
+					<div class="catalog__selected">
+						<span>Выбранные опции:</span>
+						<span>Застежка-Молния</span>
+					</div>
+				</div>
+				<div class="catalog__top-filters">
+					<div class="select">
+						<select name="">
+							<option value="1">По последним</option>
+							<option value="2">По первым</option>
+						</select>
+					</div>
+					<div class="select">
+						<select name="">
+							<option value="9">9</option>
+							<option value="8">8</option>
+							<option value="7">7</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="catalog__items">
+				@@include("_card.html", {"class": "catalog__item"})
+				@@include("_card.html", {"class": "catalog__item"})
+				@@include("_card.html", {"class": "catalog__item"})
+			</div>
+		</div>
+		<div class="main__pagination pagination">
+			<a class="pagination__prev" href="./"></a>
+			<a class="pagination__item" href="./">1</a>
+			<a class="pagination__item pagination__item_active" href="./">2</a>
+			<a class="pagination__item" href="./">3</a>
+			<span class="pagination__ellipsis">...</span>
+			<a class="pagination__item" href="./">8</a>
+			<a class="pagination__next" href="./"></a>
+		</div>
+		<div class="main__info text">
+			<p>В период непогоды особенно важно, чтобы ноги были защищены и находились в тепле. Правильно подобранные ботинки помогут создать стильный и комфортный образ как для длительных пеших прогулок, так и для городской среды. В нашем каталоге представлено более 60 моделей, которые позволят оставаться в тренде даже в капризную погоду.</p> 
+			<p>Обувь должна обеспечивать комфорт и стильно дополнять гардероб. Поэтому перед заказом ботинок оптом необходимо учесть, для каких условий они предназначены:</p> 
+			<p class="text__indent"><strong>Для активного отдыха,</strong> городских прогулок и повседневных будней. Такая обувь должна быть легкой и соответствовать модным тенденциям. Натуральные материалы, как замша, кожа и нубук, позволят подчеркнуть уникальность повседневного образа, а стильная облегченная подошва сохранит комфорт внутри ботинка;</p>
+			<p class="text__indent"><strong>Для путешествий и походов.</strong> Треккинговые ботинки с мембранной технологией гарантируют удобство носки даже в сырую погоду и предотвращают попадание пыли и влаги. При неровном рельефе такая обувь надежно фиксирует стопу и защищает от повреждений. Стильный и динамичный дизайн также позволяет носить треккинговые ботинки ежедневно в условиях городской среды.</p>
+			<p>Правильно подобранная обувь добавит комфорт к трендовому образу. Выберете понравившиеся модели в нашем каталоге и сделайте заказ ботинок оптом. Персональный менеджер поможет с оформлением и расчетом стоимости.</p>
+		</div>
+	</div>
+</main> 
+@@include("_bottom.html") 

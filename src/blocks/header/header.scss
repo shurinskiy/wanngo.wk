@@ -1,0 +1,69 @@
+.header {
+	$self: &;
+	margin-bottom: 18px;
+
+	&__top {
+		height: 100px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__phone {
+		color: #565655;
+		text-decoration: none;
+		font-size: 22px;
+	}
+
+	&__logo {
+		margin: 0 auto;
+	}
+
+	&__utility {
+
+	}
+
+	&__user {
+		font-family: "RL", sans-serif;
+		font-size: 17px;
+		text-decoration: none;
+		color: inherit;
+	}
+
+	&__compare {
+
+	}
+
+	&__cart {
+
+	}
+
+	&__line {
+		border: none;
+		margin: 0;
+
+		&_orange {
+			border-bottom: 2px solid #F58320;
+		}
+		
+		&_black {
+			border-bottom: 1px solid #555;
+		}
+	}
+
+	&__navi {
+		display: flex;
+		align-items: center;
+	}
+
+	&__menu {
+		width: 100%;
+		max-width: 880px;
+		justify-content: space-between;
+	}
+
+	&__search {
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+	}
+}

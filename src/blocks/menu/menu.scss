@@ -1,0 +1,48 @@
+.menu {
+	$self: &;
+	display: flex;
+
+	&__item {
+		flex-grow: 1;
+		font-size: 18px;
+
+		> a {
+			display: block;
+			text-align: center;
+			padding: 14px 5px;
+			text-decoration: none;
+			color: inherit;
+		}
+
+		&_haschild, &:first-child {
+			position: relative;
+
+			&:hover {
+				#{$self}__submenu {
+					display: block;
+				}
+			}
+		}
+
+		&:first-child {
+			padding-left: 32px;
+			background: url('#{$images-path}icons-sprite.svg#icon-toggle-view-white') center left 20px / 18px 12px no-repeat #F58320;
+
+			> a {
+				color: #fff;
+			}
+		}
+	}
+
+	&__submenu {
+		display: none;
+		background-color: #fff;
+		position: absolute;
+		top: 100%;
+		left: 0;
+	}
+
+	&__subitem {
+
+	}
+}

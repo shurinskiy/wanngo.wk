@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dbdbdb;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="compare" class="cls-1" d="M266,226h8v25h-8V226Zm1,1h6v23h-6V227Zm12-11h8v35h-8V216Zm1,1h6v33h-6V217Zm12,18h8v16h-8V235Zm1,1h6v14h-6V236Z" transform="translate(-266 -216)"/>
+</svg>

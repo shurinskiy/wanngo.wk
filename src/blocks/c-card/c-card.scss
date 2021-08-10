@@ -1,0 +1,49 @@
+.c-card {
+	$self: &;
+	box-sizing: border-box;
+	padding: 16px;
+	border: 1px solid #dcdcdc;
+
+	&__top {
+
+	}
+
+	&__fav {
+
+	}
+
+	&__compare {
+
+	}
+
+	&__image {
+
+	}
+
+	&__name {
+		margin-bottom: 15px;
+
+		span {
+			display: block;
+			text-align: center;
+			line-height: 1.3;
+
+			&:first-child {
+				font-family: "RL", sans-serif;
+				font-size: 18px;
+				color: #636363;
+			}
+			
+			&:last-child {
+				font-size: 20px;
+			}
+		}
+	}
+	
+	&__info {
+		font-family: "RL", sans-serif;
+		text-align: center;
+		max-width: 150px;
+		margin: 0 auto;
+	}
+}

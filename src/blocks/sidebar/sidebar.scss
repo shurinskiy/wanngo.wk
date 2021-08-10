@@ -1,0 +1,13 @@
+.sidebar {
+	$self: &;
+
+	&__title {
+		font-family: "RM", sans-serif;
+		font-size: 21px;
+		margin-bottom: 15px;
+	}
+
+	&__block {
+		margin-bottom: 20px;
+	}
+}

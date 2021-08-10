@@ -1,0 +1,39 @@
+.catalog {
+	$self: &;
+
+	&__top {
+		display: flex;
+		align-items: center;
+		margin-bottom: 25px;
+	}
+
+	&__top-side {
+		
+	}
+
+	&__title {
+		font-family: "RM", sans-serif;
+		font-size: 25px;
+		line-height: 1.3;
+	}
+
+	&__selected {
+
+	}
+
+	&__top-filters {
+		margin-left: auto;
+		display: flex;
+	}
+
+	&__items {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 0 -10px 10px;
+	}
+	
+	&__item {
+		margin: 0 10px 20px;
+		width: calc(100% / 3 - 20px);
+	}
+}

@@ -1,0 +1,8 @@
+.container {
+	$self: &;
+	box-sizing: border-box;
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 100%;
+}

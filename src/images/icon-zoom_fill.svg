@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.906" height="34.906" viewBox="0 0 34.906 34.906">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8d8d8d;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="zoom_fill" class="cls-1" d="M262.517,124.427l1.847,1.109,9.9,9.9-2.828,2.828-9.9-9.9-1.109-1.847A13,13,0,1,1,262.517,124.427Zm-16.5-14.407a8.942,8.942,0,1,1,0,12.646A8.942,8.942,0,0,1,246.02,110.02Z" transform="translate(-239.344 -103.344)"/>
+</svg>
