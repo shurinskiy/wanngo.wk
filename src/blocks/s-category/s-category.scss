@@ -2,10 +2,17 @@
 	$self: &;
 
 	&__items {
-
+		font-size: 18px;
 	}
-
+	
 	&__item {
 		display: block;
+		text-decoration: none;
+		color: inherit;
+		padding: 5px 0;
+
+		&:hover {
+			color: #F58320;
+		}
 	}
 }

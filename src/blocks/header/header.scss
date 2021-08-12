@@ -9,6 +9,7 @@
 	}
 
 	&__phone {
+		font-family: "RR", sans-serif;
 		color: #565655;
 		text-decoration: none;
 		font-size: 22px;
@@ -19,7 +20,8 @@
 	}
 
 	&__utility {
-
+		display: flex;
+		align-items: center;
 	}
 
 	&__user {
@@ -27,14 +29,61 @@
 		font-size: 17px;
 		text-decoration: none;
 		color: inherit;
+		margin-right: 15px;
 	}
 
 	&__compare {
+		display: block;
+		width: 28px;
+		height: 28px;
+		background: url('#{$images-path}icons-sprite.svg#icon-compare-view-black') center / auto no-repeat transparent;
+		text-decoration: none;
+		color: inherit;
+		position: relative;
+		flex-shrink: 0;
 
+		&[data-count]::after {
+			position: absolute;
+			top: -7px;
+			right: 2px;
+			display: block;
+			content: attr(data-count);
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #F58320;
+			color: #fff;
+			font-size: 11px;
+			text-align: center;
+			line-height: 17px;
+		}		
 	}
 
 	&__cart {
+		display: block;
+		width: 30px;
+		height: 30px;
+		background: url('#{$images-path}icons-sprite.svg#icon-cart-view-dark') center / auto no-repeat transparent;
+		text-decoration: none;
+		color: inherit;
+		position: relative;
+		margin-left: 10px;
 
+		&[data-count]::after {
+			position: absolute;
+			top: -5px;
+			right: -2px;
+			display: block;
+			content: attr(data-count);
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #F58320;
+			color: #fff;
+			font-size: 11px;
+			text-align: center;
+			line-height: 17px;
+		}		
 	}
 
 	&__line {
@@ -46,7 +95,8 @@
 		}
 		
 		&_black {
-			border-bottom: 1px solid #555;
+			margin-top: -1px;
+			border-bottom: 1px solid #888;
 		}
 	}
 
@@ -62,8 +112,30 @@
 	}
 
 	&__search {
+		box-sizing: border-box;
 		margin-left: auto;
 		display: flex;
 		align-items: center;
+		border: 1px solid #dfdfdf;
+		max-width: 205px;
+
+		input[type="text"] {
+			@extend %reset-input;
+			font-family: "RL", sans-serif;
+			font-size: 18px;
+			padding: 5px;
+
+			&::placeholder {
+				color: #c2c2c2;
+			}
+		}
+		
+		input[type="submit"] {
+			@extend %reset-button;			
+			width: 32px;
+			height: 32px;
+			flex-shrink: 0;
+			background: url('#{$images-path}icons-sprite.svg#icon-zoom_fill-view-light') center / 18px 18px no-repeat transparent;
+		}
 	}
 }

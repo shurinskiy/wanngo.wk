@@ -16,8 +16,8 @@
 			<a class="header__logo" href="./"><img src="./images/logo-wanngo.png" alt=""></a>
 			<div class="header__utility">
 				<a class="header__user" href="./">Личный кабинет</a>
-				<a class="header__compare" href="./"></a>
-				<a class="header__cart" href="./"></a>
+				<a class="header__compare" href="./" data-count="5"></a>
+				<!-- <a class="header__cart" href="./" data-count="2"></a> -->
 			</div>
 		</div>
 	</div>
@@ -42,7 +42,7 @@
 				<li class="menu__item"><a href="./">Контакты</a></li>
 			</ul>
 			<div class="header__search">
-				<input type="text">
+				<input type="text" placeholder="Поиск">
 				<input type="submit" value="">
 			</div>
 		</nav>
@@ -114,7 +114,9 @@
 				</div>
 			</div>
 			<button class="s-filters__reset">Очистить поиск</button>
-			<button class="s-filters__show">Показать товары</button>
+			<div class="s-filters__show-wrapper">
+				<button class="s-filters__show">Показать товары (5)</button>
+			</div>
 		</div>
 	</div>
 	<div class="main__body">
@@ -128,13 +130,14 @@
 					</div>
 				</div>
 				<div class="catalog__top-filters">
-					<div class="select">
+					<div class="catalog__top-filter select">
 						<select name="">
 							<option value="1">По последним</option>
-							<option value="2">По первым</option>
+							<option value="2">По самым последним</option>
+							<option value="3">По первым</option>
 						</select>
 					</div>
-					<div class="select">
+					<div class="catalog__top-filter select">
 						<select name="">
 							<option value="9">9</option>
 							<option value="8">8</option>
@@ -156,7 +159,6 @@
 	</div>
 	<div class="c-card__info">Цены доступны в личном кабинете</div>
 </div>
-
 				<div class="c-card catalog__item">
 	<div class="c-card__top">
 		<input class="c-card__fav" type="checkbox">
@@ -169,7 +171,6 @@
 	</div>
 	<div class="c-card__info">Цены доступны в личном кабинете</div>
 </div>
-
 				<div class="c-card catalog__item">
 	<div class="c-card__top">
 		<input class="c-card__fav" type="checkbox">
@@ -182,7 +183,42 @@
 	</div>
 	<div class="c-card__info">Цены доступны в личном кабинете</div>
 </div>
-
+				<div class="c-card catalog__item">
+	<div class="c-card__top">
+		<input class="c-card__fav" type="checkbox">
+		<input class="c-card__compare" type="checkbox">
+	</div>
+	<a class="c-card__image" href="./"><img src="./images/stuff/card-image.png" alt=""></a>
+	<div class="c-card__name">
+		<span>Кроссовки</span>
+		<span>WGS-02-T-1</span>
+	</div>
+	<div class="c-card__info">Цены доступны в личном кабинете</div>
+</div>
+				<div class="c-card catalog__item">
+	<div class="c-card__top">
+		<input class="c-card__fav" type="checkbox">
+		<input class="c-card__compare" type="checkbox">
+	</div>
+	<a class="c-card__image" href="./"><img src="./images/stuff/card-image.png" alt=""></a>
+	<div class="c-card__name">
+		<span>Кроссовки</span>
+		<span>WGS-02-T-1</span>
+	</div>
+	<div class="c-card__info">Цены доступны в личном кабинете</div>
+</div>
+				<div class="c-card catalog__item">
+	<div class="c-card__top">
+		<input class="c-card__fav" type="checkbox">
+		<input class="c-card__compare" type="checkbox">
+	</div>
+	<a class="c-card__image" href="./"><img src="./images/stuff/card-image.png" alt=""></a>
+	<div class="c-card__name">
+		<span>Кроссовки</span>
+		<span>WGS-02-T-1</span>
+	</div>
+	<div class="c-card__info">Цены доступны в личном кабинете</div>
+</div>
 			</div>
 		</div>
 		<div class="main__pagination pagination">

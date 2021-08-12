@@ -139,7 +139,7 @@ function icons() {
 			orange: '#F58320',
 			black: '#232323',
 			dark: '#575757',
-			light: '##9B9B9B',
+			light: '#9B9B9B',
 			white: '#ffffff'
 		}
 	}))

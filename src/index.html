@@ -64,7 +64,9 @@
 				</div>
 			</div>
 			<button class="s-filters__reset">Очистить поиск</button>
-			<button class="s-filters__show">Показать товары</button>
+			<div class="s-filters__show-wrapper">
+				<button class="s-filters__show">Показать товары (5)</button>
+			</div>
 		</div>
 	</div>
 	<div class="main__body">
@@ -78,13 +80,14 @@
 					</div>
 				</div>
 				<div class="catalog__top-filters">
-					<div class="select">
+					<div class="catalog__top-filter select">
 						<select name="">
 							<option value="1">По последним</option>
-							<option value="2">По первым</option>
+							<option value="2">По самым последним</option>
+							<option value="3">По первым</option>
 						</select>
 					</div>
-					<div class="select">
+					<div class="catalog__top-filter select">
 						<select name="">
 							<option value="9">9</option>
 							<option value="8">8</option>
@@ -94,6 +97,9 @@
 				</div>
 			</div>
 			<div class="catalog__items">
+				@@include("_card.html", {"class": "catalog__item"})
+				@@include("_card.html", {"class": "catalog__item"})
+				@@include("_card.html", {"class": "catalog__item"})
 				@@include("_card.html", {"class": "catalog__item"})
 				@@include("_card.html", {"class": "catalog__item"})
 				@@include("_card.html", {"class": "catalog__item"})

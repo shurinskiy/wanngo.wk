@@ -2,7 +2,14 @@
 	$self: &;
 
 	&__indent {
-
+		&::before {
+			display: inline-block;
+			content: '';
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			border: 1px solid #F58320;
+			margin-right: 10px;
+		}
 	}
-
 }

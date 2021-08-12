@@ -1,10 +1,12 @@
 .sidebar {
 	$self: &;
+	display: flex;
+	flex-flow: column nowrap;
 
 	&__title {
 		font-family: "RM", sans-serif;
 		font-size: 21px;
-		margin-bottom: 15px;
+		margin-bottom: 12px;
 	}
 
 	&__block {
