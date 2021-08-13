@@ -13,6 +13,12 @@
 			padding: 14px 5px;
 			text-decoration: none;
 			color: inherit;
+			white-space: nowrap;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: #F58320;
+			}
 		}
 
 		&_haschild, &:first-child {
@@ -26,8 +32,8 @@
 		}
 
 		&:first-child {
-			padding-left: 32px;
-			background: url('#{$images-path}icons-sprite.svg#icon-toggle-view-white') center left 20px / 18px 12px no-repeat #F58320;
+			padding: 0 5px 0 32px;
+			background: url('#{$images-path}icons-sprite.svg#icon-toggle-view-white') center left 14% / 18px 12px no-repeat #F58320;
 
 			> a {
 				color: #fff;
@@ -37,13 +43,37 @@
 
 	&__submenu {
 		display: none;
+		box-sizing: border-box;
 		background-color: #fff;
 		position: absolute;
 		top: 100%;
 		left: 0;
+		border: 1px solid #dcdcdc;
+		border-top: none;
+		padding: 20px 30px;
+		min-width: 100%;
+		box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.03);
+		@keyframes submenu_fade {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		animation: submenu_fade 0.4s ease;
 	}
 
 	&__subitem {
+		font-size: 17px;
+		
+		a {
+			box-sizing: border-box;
+			display: block;
+			padding: 7px 0;
+			text-decoration: none;
+			color: inherit;
+			transition: color 0.3s ease;
 
+			&:hover {
+				color: #F58320;
+			}
+		}
 	}
 }

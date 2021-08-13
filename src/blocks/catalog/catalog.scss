@@ -45,6 +45,11 @@
 	
 	&__item {
 		margin: 0 10px 20px;
+		transition: width 0.1s ease;
 		width: calc(100% / 3 - 20px);
+		
+		@include media('<=md') {
+			width: calc(100% / 2 - 20px);
+		}
 	}
 }
