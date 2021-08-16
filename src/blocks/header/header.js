@@ -4,7 +4,7 @@
 	$search.on('click', function(e) {
 		let $self = $(this);
 
-		if(parseInt($self.css('border')) < 40) {
+		if (parseInt(getComputedStyle(this).width) < 40) {
 			$self
 				.not('.opened')
 				.addClass('opened')
@@ -19,5 +19,4 @@
 			$search.removeClass('opened');
 		}
 	});
-
 })();

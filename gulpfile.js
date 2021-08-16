@@ -63,8 +63,8 @@ let pth = {
 };
 
 function swallowError (error) {
-	console.log(error.toString())
-	this.emit('end')
+	console.log(error.toString());
+	this.emit('end');
 }
 
 function clear() {

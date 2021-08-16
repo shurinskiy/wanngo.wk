@@ -13,10 +13,18 @@
 		color: #565655;
 		text-decoration: none;
 		font-size: 22px;
+
+		@include media('<=sm') {
+			display: none;
+		}
 	}
 
 	&__logo {
 		margin: 0 auto;
+
+		@include media('<=sm') {
+			margin-left: 0;
+		}
 	}
 
 	&__utility {
@@ -105,6 +113,10 @@
 		}
 	}
 
+	&__bottom {
+		
+	}
+
 	&__navi {
 		display: flex;
 		align-items: center;
@@ -114,6 +126,10 @@
 			content: '';
 			width: 32px;
 			flex-shrink: 0;
+		}
+
+		@include media('<=sm') {
+			display: none;
 		}
 	}
 
