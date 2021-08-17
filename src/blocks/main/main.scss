@@ -8,8 +8,13 @@
 		grid-template-columns: 1fr 2fr;
 	}
 
-	&__side {
+	@include media('<=sm') {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
+	&__side {
+		width: 100%;
 	}
 
 	&__body {

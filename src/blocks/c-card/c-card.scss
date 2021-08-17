@@ -1,8 +1,11 @@
 .c-card {
 	$self: &;
 	box-sizing: border-box;
+	display: block;
 	padding: 16px;
 	border: 1px solid #dcdcdc;
+	text-decoration: none;
+	color: inherit;
 
 	&__top {
 		display: flex;

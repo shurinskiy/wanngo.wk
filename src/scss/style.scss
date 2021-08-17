@@ -1,7 +1,7 @@
 @import "lib/additional.scss"; 
 @include reset(); 
 
-// body { @include screen-media(); }
+body { @include screen-media(); }
 
 @import "../../node_modules/include-media/dist/_include-media.scss";
 
@@ -61,6 +61,7 @@ body, html {
 	display: flex;
 	flex-flow: column nowrap;
 }
+
 // .main { flex: 1 0 auto; }
 .footer { 
 	flex: 0 0 auto; 

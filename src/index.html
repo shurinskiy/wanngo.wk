@@ -4,10 +4,10 @@
 <div class="breadcrumbs container"><a href="./">Главная</a><span>Весь каталог</span></div>
 <main class="main container">
 	<div class="main__side sidebar">
-		<h3 class="sidebar__title">Категории</h3>
 		<div class="sidebar__block s-category">
+			<h3 class="sidebar__title s-category__title">Категории</h3>
 			<div class="s-category__items">
-				<a class="s-category__item" href="./">Весь каталог</a>
+				<a class="s-category__item active" href="./">Весь каталог</a>
 				<a class="s-category__item" href="./">Ботинки</a>
 				<a class="s-category__item" href="./">Дутики</a>
 				<a class="s-category__item" href="./">Кеды</a>
@@ -17,10 +17,14 @@
 				<a class="s-category__item" href="./">Полусапоги</a>
 				<a class="s-category__item" href="./">Сандалии</a>
 				<a class="s-category__item" href="./">Слипоны</a>
+				<span class="s-category__item-all">Все категории</span>
 			</div>
 		</div>
-		<h3 class="sidebar__title">Фильтры</h3>
 		<div class="sidebar__block s-filters">
+			<h3 class="sidebar__title">
+				<span>Фильтры</span>
+				<button class="s-filters__close"></button>
+			</h3>
 			<div class="s-filters__block">
 				<h4 class="s-filters__title">Категория</h4>
 				<div class="s-filters__items">
@@ -76,6 +80,7 @@
 						<span>Выбранные опции:</span>
 						<span>Застежка-Молния</span>
 					</div>
+					<button class="catalog__toggle"></button>
 				</div>
 				<div class="catalog__top-filters">
 					<div class="catalog__top-filter select">

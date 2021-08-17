@@ -5,10 +5,18 @@
 		display: flex;
 		align-items: center;
 		margin-bottom: 25px;
+
+		@include media('<=sm') {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__top-side {
-		
+		@include media('<=sm') {
+			width: 100%;
+			position: relative;
+			padding-right: 40px;
+		}
 	}
 
 	&__title {
@@ -24,16 +32,53 @@
 		color: #707070;
 	}
 
+	&__toggle {
+		@extend %reset-button;
+		display: none;
+		width: 32px;
+		height: 24px;
+		background: url('#{$images-path}icons-sprite.svg#icon-filter-view-black') center / auto no-repeat transparent;
+		position: absolute;
+		z-index: 2;
+		top: 50%; right: 0;
+		transform: translateY(-50%);
+
+		@include media('<=sm') {
+			display: block;
+		}
+	}
+
 	&__top-filters {
 		margin-left: auto;
 		display: flex;
+		
+		@include media('<=sm') {
+			display: block;
+			margin: 0;
+		}
 	}
-
+	
 	&__top-filter {
 		margin: 8px 0;
 
 		&:first-child {
 			margin-right: 10px;
+		}
+		
+		@include media('<=sm') {
+			display: none !important;
+			
+			&:first-child {
+				display: block !important;
+			}
+
+			&.select {
+				border: none;
+
+				select {
+					padding-left: 0;
+				}
+			}
 		}
 	}
 
@@ -41,6 +86,10 @@
 		display: flex;
 		flex-flow: row wrap;
 		margin: 0 -10px 10px;
+		
+		@include media('<=xxs') {
+			justify-content: center;
+		}
 	}
 	
 	&__item {
@@ -50,6 +99,19 @@
 		
 		@include media('<=md') {
 			width: calc(100% / 2 - 20px);
+		}
+		
+		@include media('<=sm') {
+			width: calc(100% / 3 - 20px);
+		}
+		
+		@include media('<=xs') {
+			width: calc(100% / 2 - 20px);
+		}
+		
+		@include media('<=xxs') {
+			width: calc(100% / 1 - 20px);
+			max-width: 320px;
 		}
 	}
 }

@@ -2,6 +2,8 @@
 	$self: &;
 
 	&__title {
+		display: flex;
+		justify-content: space-between;
 		font-family: "RM", sans-serif;
 		font-size: 21px;
 		margin-bottom: 12px;

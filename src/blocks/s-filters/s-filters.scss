@@ -3,6 +3,10 @@
 	flex-grow: 1;
 	position: relative;
 
+	@include media('<=sm') {
+		display: none;
+	}
+
 	&__block {
 		border-bottom: 1px solid #dcdcdc;
 
@@ -12,6 +16,19 @@
 
 		&:last-of-type {
 			margin-bottom: 30px;
+		}
+	}
+
+	&__close {
+		@extend %reset-button;
+		align-self: stretch;
+		background: url('#{$images-path}icons-sprite.svg#icon-close-view-dark') center / 17px 17px no-repeat transparent;
+		width: 20px;
+		margin-right: 13px;
+		display: none;
+
+		@include media('<=sm') {
+			display: block;
 		}
 	}
 
@@ -36,6 +53,7 @@
 		display: flex;
 		align-items: center;
 		padding: 4px 0;
+		margin-left: 15px;
 		cursor: pointer;
 
 		input[type="checkbox"] {
