@@ -1,14 +1,17 @@
 .s-filters {
 	$self: &;
 	flex-grow: 1;
-	display: flex;
-	flex-flow: column nowrap;
+	position: relative;
 
 	&__block {
 		border-bottom: 1px solid #dcdcdc;
 
-		&:first-child {
+		&:first-of-type {
 			border-top: 1px solid #dcdcdc;
+		}
+
+		&:last-of-type {
+			margin-bottom: 30px;
 		}
 	}
 
@@ -65,13 +68,7 @@
 		display: block;
 		color: #707070;
 		font-size: 15px;
-		margin: 50px auto 20px;
-	}
-	
-	&__show-wrapper {
-		flex-grow: 1;
-		display: flex;
-		flex-flow: column nowrap;
+		margin: 25px auto 20px;
 	}
 	
 	&__show {
@@ -80,10 +77,12 @@
 		font-size: 15px;
 		width: 100%;
 		color: #F58320;
+		background-color: #fff;
 		border: 2px solid #F58320;
 		padding: 10px;
-		margin-top: auto;
 		position: sticky;
+		position: -webkit-sticky;
 		bottom: 20px;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 	}
 }

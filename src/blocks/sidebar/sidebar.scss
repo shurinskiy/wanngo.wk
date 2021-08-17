@@ -1,7 +1,5 @@
 .sidebar {
 	$self: &;
-	display: flex;
-	flex-flow: column nowrap;
 
 	&__title {
 		font-family: "RM", sans-serif;
