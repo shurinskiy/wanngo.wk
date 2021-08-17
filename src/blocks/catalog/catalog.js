@@ -4,7 +4,13 @@
 		e.preventDefault();
 		e.stopPropagation();
 
-		$('.s-filters').slideToggle('slow');
+		$('.s-filters').slideToggle('slow', function() {
+			let $self = $(this);
+			
+			if ($self.is(':hidden'))
+				$self.removeAttr('style');
+		});
+
 		$('.catalog__toggle').toggle();
 	})
 

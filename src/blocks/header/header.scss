@@ -162,6 +162,7 @@
 		width: 20px;
 		background: url('#{$images-path}icons-sprite.svg#icon-toggle-view-black') center / 18px 12px no-repeat transparent;
 		margin-right: 12px;
+		flex-shrink: 0;
 		
 		@include media('<=sm') {
 			display: block;
