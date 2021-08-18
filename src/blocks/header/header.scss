@@ -65,7 +65,7 @@
 
 	&__compare {
 		display: block;
-		width: 28px;
+		width: 29px;
 		height: 28px;
 		background: url('#{$images-path}icons-sprite.svg#icon-compare-view-black') center / auto no-repeat transparent;
 		text-decoration: none;
@@ -206,7 +206,7 @@
 			position: absolute;
 			z-index: 9998;
 			left: -330px; top: calc(100% + 1px);
-			min-height: 70vh;
+			height: 100vh;
 			max-width: 300px;
 			width: 100%;
 			background-color: #fff;
@@ -217,6 +217,7 @@
 
 			&.opened {
 				left: -20px;
+				overflow: auto;
 			}
 		}
 	}
