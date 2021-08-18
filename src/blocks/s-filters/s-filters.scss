@@ -1,10 +1,32 @@
 .s-filters {
 	$self: &;
+	box-sizing: border-box;
 	flex-grow: 1;
-	position: relative;
+	background-color: #fff;
 
 	@include media('<=sm') {
 		display: none;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		padding: 30px 20px;
+		height: 100vh;
+		overflow: auto;
+		@keyframes filters_fade {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		animation: filters_fade 0.4s ease;
+
+		&.opened {
+			display: block;
+		}
+
+		#{$self}__head {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__block {
@@ -66,12 +88,17 @@
 			border-radius: 3px;
 			margin-right: 8px;
 
-			&:checked::before {
-				display: block;
-				content: '';
-				width: 12px;
-				height: 12px;
-				background: url('#{$images-path}icons-sprite.svg#icon-check-view-black') center / 10px 7px no-repeat transparent;
+			&:checked {
+				background-color: #F58320;
+				border: none;
+
+				&::before {
+					display: block;
+					content: '';
+					width: 16px;
+					height: 16px;
+					background: url('#{$images-path}icons-sprite.svg#icon-check-view-white') center / 10px 7px no-repeat transparent;
+				}
 			}
 		}
 

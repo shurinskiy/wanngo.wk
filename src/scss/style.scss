@@ -1,7 +1,7 @@
 @import "lib/additional.scss"; 
 @include reset(); 
 
-body { @include screen-media(); }
+// body { @include screen-media(); }
 
 @import "../../node_modules/include-media/dist/_include-media.scss";
 

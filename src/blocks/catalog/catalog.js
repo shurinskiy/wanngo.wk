@@ -1,17 +1,39 @@
+import { disablePageScroll, enablePageScroll } from 'scroll-lock';
+
 (() => {
 
-	$('.catalog__toggle, .s-filters__close').on('click', function(e) {
+	let $c_toggles = $('.catalog__toggle, .s-filters__close');
+	let $s_filters = $('.s-filters');
+
+	$c_toggles.on('click', function(e) {
 		e.preventDefault();
 		e.stopPropagation();
 
-		$('.s-filters').slideToggle('slow', function() {
-			let $self = $(this);
-			
-			if ($self.is(':hidden'))
-				$self.removeAttr('style');
-		});
+		$s_filters.toggleClass('opened');
+		// $s_filters.slideToggle('slow');
+		
 
-		$('.catalog__toggle').toggle();
+		if($s_filters.is(':hidden')) {
+			enablePageScroll();
+			return;
+		}
+
+		disablePageScroll();
 	})
+
+	$('.catalog__items').on({
+		mouseenter: function() {
+			let $self = $(this);
+			$self
+				.height($self.find(':first-child').outerHeight())
+				.addClass('hover');
+		},
+		mouseleave: function() {
+			$(this)
+				.removeAttr('style')
+				.removeClass('hover');
+		}
+	}, '.catalog__item');
+
 
 })();

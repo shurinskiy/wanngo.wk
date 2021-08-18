@@ -31,13 +31,17 @@
 		display: none;
 		max-width: 200px;
 		margin-right: auto;
-
+		
 		> img {
 			display: block;
 		}
 		
 		@include media('<=sm') {
 			display: block;
+		}
+		
+		@include media('<=xxs') {
+			max-width: 160px;
 		}
 	}
 

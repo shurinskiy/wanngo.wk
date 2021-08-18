@@ -66,15 +66,17 @@
 		}
 		
 		@include media('<=sm') {
-			display: none !important;
+			margin-right: 0 !important;
+			/* display: none !important;
 			
 			&:first-child {
 				display: block !important;
-			}
+			} */
 
 			&.select {
 				border: none;
-
+				display: block;
+				
 				select {
 					padding-left: 0;
 				}
@@ -96,7 +98,7 @@
 		margin: 0 10px 20px;
 		transition: width 0.1s ease;
 		width: calc(100% / 3 - 20px);
-		
+	
 		@include media('<=md') {
 			width: calc(100% / 2 - 20px);
 		}

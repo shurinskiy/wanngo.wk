@@ -20,8 +20,8 @@
 				<span class="s-category__item-all">Все категории</span>
 			</div>
 		</div>
-		<div class="sidebar__block s-filters">
-			<h3 class="sidebar__title">
+		<div class="sidebar__block s-filters" data-scroll-lock-scrollable>
+			<h3 class="sidebar__title s-filters__head">
 				<span>Фильтры</span>
 				<button class="s-filters__close"></button>
 			</h3>
@@ -100,6 +100,7 @@
 				</div>
 			</div>
 			<div class="catalog__items">
+				@@include("_card.html", {"class": "catalog__item"})
 				@@include("_card.html", {"class": "catalog__item"})
 				@@include("_card.html", {"class": "catalog__item"})
 				@@include("_card.html", {"class": "catalog__item"})

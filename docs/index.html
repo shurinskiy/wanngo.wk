@@ -87,8 +87,8 @@
 				<span class="s-category__item-all">Все категории</span>
 			</div>
 		</div>
-		<div class="sidebar__block s-filters">
-			<h3 class="sidebar__title">
+		<div class="sidebar__block s-filters" data-scroll-lock-scrollable>
+			<h3 class="sidebar__title s-filters__head">
 				<span>Фильтры</span>
 				<button class="s-filters__close"></button>
 			</h3>
@@ -167,78 +167,125 @@
 				</div>
 			</div>
 			<div class="catalog__items">
-				<a href="./" class="c-card catalog__item">
-	<div class="c-card__top">
-		<input class="c-card__fav" type="checkbox">
-		<input class="c-card__compare" type="checkbox">
-	</div>
-	<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
-	<div class="c-card__name">
-		<span>Кроссовки</span>
-		<span>WGS-02-T-1</span>
-	</div>
-	<div class="c-card__info">Цены доступны в личном кабинете</div>
-</a>
-				<a href="./" class="c-card catalog__item">
-	<div class="c-card__top">
-		<input class="c-card__fav" type="checkbox">
-		<input class="c-card__compare" type="checkbox">
-	</div>
-	<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
-	<div class="c-card__name">
-		<span>Кроссовки</span>
-		<span>WGS-02-T-1</span>
-	</div>
-	<div class="c-card__info">Цены доступны в личном кабинете</div>
-</a>
-				<a href="./" class="c-card catalog__item">
-	<div class="c-card__top">
-		<input class="c-card__fav" type="checkbox">
-		<input class="c-card__compare" type="checkbox">
-	</div>
-	<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
-	<div class="c-card__name">
-		<span>Кроссовки</span>
-		<span>WGS-02-T-1</span>
-	</div>
-	<div class="c-card__info">Цены доступны в личном кабинете</div>
-</a>
-				<a href="./" class="c-card catalog__item">
-	<div class="c-card__top">
-		<input class="c-card__fav" type="checkbox">
-		<input class="c-card__compare" type="checkbox">
-	</div>
-	<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
-	<div class="c-card__name">
-		<span>Кроссовки</span>
-		<span>WGS-02-T-1</span>
-	</div>
-	<div class="c-card__info">Цены доступны в личном кабинете</div>
-</a>
-				<a href="./" class="c-card catalog__item">
-	<div class="c-card__top">
-		<input class="c-card__fav" type="checkbox">
-		<input class="c-card__compare" type="checkbox">
-	</div>
-	<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
-	<div class="c-card__name">
-		<span>Кроссовки</span>
-		<span>WGS-02-T-1</span>
-	</div>
-	<div class="c-card__info">Цены доступны в личном кабинете</div>
-</a>
-				<a href="./" class="c-card catalog__item">
-	<div class="c-card__top">
-		<input class="c-card__fav" type="checkbox">
-		<input class="c-card__compare" type="checkbox">
-	</div>
-	<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
-	<div class="c-card__name">
-		<span>Кроссовки</span>
-		<span>WGS-02-T-1</span>
-	</div>
-	<div class="c-card__info">Цены доступны в личном кабинете</div>
-</a>
+				<div class="c-card catalog__item">
+	<a class="c-card__body" href="./">
+		<div class="c-card__top">
+			<input class="c-card__fav" type="checkbox">
+			<input class="c-card__compare" type="checkbox">
+		</div>
+		<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
+		<div class="c-card__name">
+			<span>Кроссовки</span>
+			<span>WGS-02-T-1</span>
+		</div>
+		<div class="c-card__info">Цены доступны в личном кабинете</div>
+		<div class="c-card__bottom">
+			<button class="c-card__btn">Войти</button>
+		</div>
+	</a>
+</div>
+				<div class="c-card catalog__item">
+	<a class="c-card__body" href="./">
+		<div class="c-card__top">
+			<input class="c-card__fav" type="checkbox">
+			<input class="c-card__compare" type="checkbox">
+		</div>
+		<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
+		<div class="c-card__name">
+			<span>Кроссовки</span>
+			<span>WGS-02-T-1</span>
+		</div>
+		<div class="c-card__info">Цены доступны в личном кабинете</div>
+		<div class="c-card__bottom">
+			<button class="c-card__btn">Войти</button>
+		</div>
+	</a>
+</div>
+				<div class="c-card catalog__item">
+	<a class="c-card__body" href="./">
+		<div class="c-card__top">
+			<input class="c-card__fav" type="checkbox">
+			<input class="c-card__compare" type="checkbox">
+		</div>
+		<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
+		<div class="c-card__name">
+			<span>Кроссовки</span>
+			<span>WGS-02-T-1</span>
+		</div>
+		<div class="c-card__info">Цены доступны в личном кабинете</div>
+		<div class="c-card__bottom">
+			<button class="c-card__btn">Войти</button>
+		</div>
+	</a>
+</div>
+				<div class="c-card catalog__item">
+	<a class="c-card__body" href="./">
+		<div class="c-card__top">
+			<input class="c-card__fav" type="checkbox">
+			<input class="c-card__compare" type="checkbox">
+		</div>
+		<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
+		<div class="c-card__name">
+			<span>Кроссовки</span>
+			<span>WGS-02-T-1</span>
+		</div>
+		<div class="c-card__info">Цены доступны в личном кабинете</div>
+		<div class="c-card__bottom">
+			<button class="c-card__btn">Войти</button>
+		</div>
+	</a>
+</div>
+				<div class="c-card catalog__item">
+	<a class="c-card__body" href="./">
+		<div class="c-card__top">
+			<input class="c-card__fav" type="checkbox">
+			<input class="c-card__compare" type="checkbox">
+		</div>
+		<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
+		<div class="c-card__name">
+			<span>Кроссовки</span>
+			<span>WGS-02-T-1</span>
+		</div>
+		<div class="c-card__info">Цены доступны в личном кабинете</div>
+		<div class="c-card__bottom">
+			<button class="c-card__btn">Войти</button>
+		</div>
+	</a>
+</div>
+				<div class="c-card catalog__item">
+	<a class="c-card__body" href="./">
+		<div class="c-card__top">
+			<input class="c-card__fav" type="checkbox">
+			<input class="c-card__compare" type="checkbox">
+		</div>
+		<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
+		<div class="c-card__name">
+			<span>Кроссовки</span>
+			<span>WGS-02-T-1</span>
+		</div>
+		<div class="c-card__info">Цены доступны в личном кабинете</div>
+		<div class="c-card__bottom">
+			<button class="c-card__btn">Войти</button>
+		</div>
+	</a>
+</div>
+				<div class="c-card catalog__item">
+	<a class="c-card__body" href="./">
+		<div class="c-card__top">
+			<input class="c-card__fav" type="checkbox">
+			<input class="c-card__compare" type="checkbox">
+		</div>
+		<div class="c-card__image"><img src="./images/stuff/card-image.png" alt=""></div>
+		<div class="c-card__name">
+			<span>Кроссовки</span>
+			<span>WGS-02-T-1</span>
+		</div>
+		<div class="c-card__info">Цены доступны в личном кабинете</div>
+		<div class="c-card__bottom">
+			<button class="c-card__btn">Войти</button>
+		</div>
+	</a>
+</div>
 			</div>
 		</div>
 		<div class="main__pagination pagination">
