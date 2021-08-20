@@ -12,6 +12,8 @@
 	}
 
 	&__top-side {
+		padding-right: 10px;
+		
 		@include media('<=sm') {
 			width: 100%;
 			position: relative;
@@ -55,26 +57,29 @@
 		@include media('<=sm') {
 			flex-flow: column nowrap;
 			align-items: flex-start;
-			margin: 0;
+			margin: 0 0 0 -10px;
+			padding-top: 10px;
 		}
-	}
-	
-	&__top-filter {
-		margin: 8px 0;
 
-		&:first-child {
-			margin-right: 10px;
-		}
-		
-		@include media('<=sm') {
-			margin-right: 0 !important;
+		.select__wrapper {
+			margin: 8px 0;
+			border: 1px solid #6b6b6b;
 
-			&.select {
+			&:first-child {
+				margin-right: 10px;
+			}
+			
+			@include media('<=sm') {
+				margin: 0 !important;
 				border: none;
-				display: block;
-				
-				select {
-					padding-left: 0;
+	
+				&.select {
+					border: none;
+					display: block;
+					
+					select {
+						padding-left: 0;
+					}
 				}
 			}
 		}
