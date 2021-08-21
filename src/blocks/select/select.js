@@ -1,6 +1,5 @@
 (() => {
 
-	// Стилизовать выпадающий список
 	$('.select').each(function() {
 		let $self = $(this);
 		let $options = $self.find('option');
@@ -18,7 +17,7 @@
 		let $list = $head.next('.select__list');
 
 		// Добавить элементы списка
-		for (var i = 0; i < $options.length; i++) {
+		for (let i = 0; i < $options.length; i++) {
 			$('<li>', {
 					class: 'select__item',
 					html: $('<span>', {
@@ -41,9 +40,9 @@
 		});
 
 		// По клику по любому месту, кроме заголовка - прятать список выбора
-		$(window).on('click', function() {
-			if($list.is(':visible')){
-				$head.toggleClass('select__head_open');
+		$(window).on('click', function(e) {
+			if($head.hasClass('select__head_open') && !e.target.closest('.select__wrapper')) {
+				$head.removeClass('select__head_open');
 			}
 		});
 
@@ -61,5 +60,4 @@
 			.attr('selected', 'selected')
 		});	
 	});
-
 })();
